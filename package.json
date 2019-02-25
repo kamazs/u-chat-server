@@ -22,6 +22,8 @@
   "dependencies": {
     "@types/node": "^11.9.4",
     "@types/winston": "^2.4.4",
+    "socket.io": "^2.2.0",
+    "@types/socket.io": "^2.1.2",
     "winston": "^3.2.1"
   }
 }
