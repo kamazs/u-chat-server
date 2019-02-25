@@ -4,7 +4,7 @@
   "description": "Small chat server as a task for job application",
   "main": "dist/main.js",
   "scripts": {
-    "build-ts": "tsc",
+    "build": "tsc",
     "start": "npm run serve",
     "serve": "node dist/main.js",
     "watch-node": "nodemon dist/main.js",
