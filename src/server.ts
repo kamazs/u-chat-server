@@ -128,9 +128,10 @@ export function startServer({ port = 3000, timeOut = 20000 }) {
         logger.error({ level: "error", message: `Server stopped because of ${reason}` });
         io.close();
         clients = [];
+        process.exit(0);
     }
-    process.once("SIGINT", () => stopServer("SIGINT"));
-    process.once("SIGTERM", () => stopServer("SIGTERM"));
+    process.on("SIGINT", () => stopServer("SIGINT"));
+    process.on("SIGTERM", () => stopServer("SIGTERM"));
 
     logger.log({ level: "info", message: `Server ready. Listening to ${port}` });
     io.listen(port);
