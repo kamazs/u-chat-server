@@ -1,0 +1,27 @@
+{
+  "name": "u-chat-server",
+  "version": "1.0.0",
+  "description": "Small chat server as a task for job application",
+  "main": "dist/main.js",
+  "scripts": {
+    "build-ts": "tsc",
+    "start": "npm run serve",
+    "serve": "node dist/main.js",
+    "watch-node": "nodemon dist/main.js",
+    "watch-ts": "tsc -w",
+    "test": "node_modules/.bin/jest.cmd test"
+  },
+  "author": "Mārtiņš Ceplis",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/node": "^11.9.4",
+    "@types/winston": "^2.4.4",
+    "winston": "^3.2.1"
+  }
+}
