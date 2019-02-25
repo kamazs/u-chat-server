@@ -21,7 +21,7 @@ type Client = {
     lastActivity: TimeStamp;
 }
 
-const userNameRegexp = new RegExp(/^[-\w\.\$@\*\!]{1,30}$/);
+const userNameRegexp = new RegExp(/^[a-zA-Z]([._](?![._])|[a-zA-Z0-9]){4,21}[a-zA-Z0-9]$/);
 export function isValidUsername(userName: string) {
     return userNameRegexp.test(userName);
 }
