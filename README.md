@@ -12,3 +12,9 @@ disconnected; a message about the event (e.g. "John was disconnected due to inac
 6. Terminates gracefully upon receiving SIGINT or SIGTERM signals.
 7. Provide readable logging solution 
 
+## How to
+1. Checkout the repo
+2. `npm install` in project directory to set up dependencies
+3. `npm run build` to build the server
+4. `npm run serve` to start it up
+5. join with `u-chat-client`
